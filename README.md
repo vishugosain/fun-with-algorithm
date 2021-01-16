@@ -72,6 +72,61 @@ https://450dsa.com/
      print("The number is Prime")
    }
   ```
+- Sum of number is two Prime Number
+```swift
+func isPrime(num : Int) -> Bool {
+ if num == 0 || num == 1 {
+       return false
+ }
+ if num == 2 || num == 3 {
+      return true
+ }
+ let squareRoot:Int = Int(ceil(sqrt(Double(num))))
+ for i in 2 ... squareRoot {
+    if num % i == 0 {
+         return false
+    }
+  }
+  return true
+}
+func nextPrimeNumber(num : Int) -> Int {
+ var number = num
+    
+    repeat {
+        number += 1
+    } while !isPrime(num: number)
+    print(number)
+    return number
+}
+ 
+var number:Int = 34
+var i:Int = 2
+while (i <= (number - i)) {
+    if (isPrime(num: (number - i))) {
+        print ("\(i) + \(number-i) = \(number)")
+    }
+    i = nextPrimeNumber(num : i)
+}
+```
+
+- Multiple two number without using operator
+```swift
+ let number1:Int = -5
+ let number2: Int = -6
+ var output: Int = 0
+ var startWith = 0, end = 0
+ if number1 > 0  && number2 > 0 {
+      startWith = 1
+      end = number1
+ }else {
+     startWith = number1
+     end = 0
+ }
+ for _ in startWith...end {
+     output = output + number2
+ }
+ print(output)
+```
 ## Medium
 
 ## Hard
