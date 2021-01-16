@@ -38,7 +38,7 @@ https://450dsa.com/
     spiral(input)
   ```
 - Swap Number Without using third variable
-  ```javascript
+  ```swift
       var number1 = 5
       var number2 = 7
       print("Before Swap number1 = %d, number2 = %d", number1, number2)
@@ -48,10 +48,10 @@ https://450dsa.com/
       print("After Swap number1 = %d, number2 = %d", number1. number2)
   ```
 - Prime Number
-  ```javascript
+  ```C++
    var number;
    print("enter a number")
-			scanf("%d", number)
+   scanf("%d", number)
    if (number == 0 || number == 1)
    {
      print("The number is not prime")
