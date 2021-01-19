@@ -182,7 +182,7 @@ var arrayCollection:[Int] = [0,1,1,1,2,2,0,0,0,0,1,2]
          break
          default:
          print("array is not accurate we only need 0,1,2")
-         break
+         exit(0)
      }
  }
  
