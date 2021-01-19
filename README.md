@@ -127,6 +127,71 @@ while (i <= (number - i)) {
  }
  print(output)
 ```
+- Print minimum and maximum from array
+```swift
+let arrayCollection = [-1000,11,45,1,330,3300,50000]
+let halfOfCollection = arrayCollection.count / 2
+print("Half of Collection : \(halfOfCollection)")
+var max:Int = arrayCollection[0], min:Int = arrayCollection[0]
+
+for index in 0..<halfOfCollection {
+    
+     if arrayCollection[index] < min {
+         min = arrayCollection[index]
+     }
+     if arrayCollection[index] > max {
+         max = arrayCollection[index]
+     }
+}
+
+for index in halfOfCollection..<arrayCollection.count {
+     if arrayCollection[index] < min {
+         min = arrayCollection[index]
+     }
+     if arrayCollection[index] > max  {
+         max = arrayCollection[index]
+     }
+}
+
+print("Minium Value \(min)") 
+print("Maximum value \(max)”)
+```
+- Sort array's of 0s, 1s, 2s (also know as  Dutuch National Flag Problem)
+```Swift
+var arrayCollection:[Int] = [0,1,1,1,2,2,0,0,0,0,1,2]
+ 
+ func swapNumber(_ num1:  Int, _ num2:  Int)  {
+    let temp = arrayCollection[num1]
+    arrayCollection[num1] = arrayCollection[num2]
+    arrayCollection[num2] = temp
+ }
+ var low:Int = 0, mid:Int = 0, high = arrayCollection.count - 1
+ while mid <= high {
+     switch(arrayCollection[mid]) {
+         case 0:
+            swapNumber(low,mid)
+            low += 1
+            mid += 1
+         break
+         case 1:
+            mid += 1
+         break
+         case 2:
+            swapNumber(mid, high)
+            high -= 1
+         break
+         default:
+         print("array is not accurate we only need 0,1,2")
+         break
+     }
+ }
+ 
+ print("Final output")
+ for index in arrayCollection {
+     print("\(index)")
+ }
+
+```
 ## Medium
 
 ## Hard
