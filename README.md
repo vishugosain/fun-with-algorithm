@@ -6,9 +6,9 @@ https://450dsa.com/
 
 ## Easy
 
-- Add two numbers without using any extra variable
+1. Add two numbers without using any extra variable
  
-- Spiral Sort
+2. Spiral Sort
 ```javascript
     var input = [[ 1, 2, 3, 4,5,6], 
                 [ 7, 8,9,10,11,12],  
@@ -37,7 +37,7 @@ https://450dsa.com/
     console.log("Clockwise Order is:")
     spiral(input)
   ```
-- Swap Number Without using third variable
+3. Swap Number Without using third variable
 ```swift
     var number1 = 5
     var number2 = 7
@@ -47,7 +47,7 @@ https://450dsa.com/
     number = number1 - number2 //7
     print("After Swap number1 = %d, number2 = %d", number1. number2)
 ```
-- Prime Number
+4. Prime Number
 ```C++
  var number;
  print("enter a number")
@@ -72,7 +72,7 @@ https://450dsa.com/
    print("The number is Prime")
  }
 ```
-- Sum of number is two Prime Number
+5. Sum of number is two Prime Number
 ```swift
 func isPrime(num : Int) -> Bool {
  if num == 0 || num == 1 {
@@ -109,7 +109,7 @@ while (i <= (number - i)) {
 }
 ```
 
-- Multiple two number without using operator
+6. Multiple two number without using operator
 ```swift
  let number1:Int = -5
  let number2: Int = -6
@@ -127,7 +127,7 @@ while (i <= (number - i)) {
  }
  print(output)
 ```
-- Print minimum and maximum from array
+7. Print minimum and maximum from array
 ```swift
 let arrayCollection = [-1000,11,45,1,330,3300,50000]
 let halfOfCollection = arrayCollection.count / 2
@@ -156,7 +156,7 @@ for index in halfOfCollection..<arrayCollection.count {
 print("Minium Value \(min)") 
 print("Maximum value \(max)”)
 ```
-- Sort array's of 0s, 1s, 2s (also know as  Dutuch National Flag Problem)
+8. Sort array's of 0s, 1s, 2s (also know as  Dutuch National Flag Problem)
 ```Swift
 var arrayCollection:[Int] = [0,1,1,1,2,2,0,0,0,0,1,2]
  
